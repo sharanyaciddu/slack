@@ -1,0 +1,70 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="HomePageChrome" verbose="1">
+    <parameter name="driver" value="chrome"/>
+    <listeners>
+        <listener class-name="com.slack.qa.common.testng.CustomReporter"/>
+        <listener class-name="com.pley.qa.common.testng.RetryTestListener"/>
+        <listener class-name="com.pley.qa.common.testng.RetryCounterManagerListener"/>
+    </listeners>
+    <test name="Tc_01_HomeTest" verbose="1">
+        <classes>
+            <class name="com.pley.qa.homepage.test.Tc_01_HomeTest"/>
+        </classes>
+    </test>
+    <test name="Tc_02_SignupFlowTest" verbose="1">
+        <classes>
+            <class name="com.pley.qa.homepage.test.Tc_02_SignupFlowTest"/>
+        </classes>
+    </test>
+    <test name="Tc_03_AutoFillTest" verbose="1">
+        <classes>
+            <class name="com.pley.qa.homepage.test.Tc_03_AutoFillTest"/>
+        </classes>
+    </test>
+    <test name="Tc_04_PleyPreferencesTest" verbose="1">
+        <classes>
+            <class name="com.pley.qa.homepage.test.Tc_04_PleyPreferencesTest"/>
+        </classes>
+    </test>
+    <test name="Tc_05_MyPleyListTest" verbose="1">
+        <classes>
+            <class name="com.pley.qa.homepage.test.Tc_05_MyPleyListTest"/>
+        </classes>
+    </test>
+    <test name="Tc_06_AddToysTest" verbose="1">
+        <classes>
+            <class name="com.pley.qa.homepage.test.Tc_06_AddToysTest"/>
+        </classes>
+    </test>
+    <test name="Tc_07_MyAccountTest" verbose="1">
+        <classes>
+            <class name="com.pley.qa.homepage.test.Tc_07_MyAccountTest"/>
+        </classes>
+    </test>
+    <test name="Tc_08_AccountSettingTest" verbose="1">
+        <classes>
+            <class name="com.pley.qa.homepage.test.Tc_08_AccountSettingTest"/>
+        </classes>
+    </test>
+    <test name="Tc_09_ChangePlanTest" verbose="1">
+        <classes>
+            <class name="com.pley.qa.homepage.test.Tc_09_ChangePlanTest"/>
+        </classes>
+    </test>
+    <test name="Tc_10_GiftCardsTest" verbose="1">
+        <classes>
+            <class name="com.pley.qa.homepage.test.Tc_10_GiftCardsTest"/>
+        </classes>
+    </test>
+    <test name="Tc_11_InviteFriendsTest" verbose="1">
+        <classes>
+            <class name="com.pley.qa.homepage.test.Tc_11_InviteFriendsTest"/>
+        </classes>
+    </test>
+    <test name="Tc_12_FooterLinksTest" verbose="1">
+        <classes>
+            <class name="com.pley.qa.homepage.test.Tc_12_FooterLinksTest"/>
+        </classes>
+    </test>
+</suite>
